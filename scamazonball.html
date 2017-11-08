@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <style>
+
+        body{
+            background-image: url("http://i67.tinypic.com/1s0cyh_th.png");
+            height: 100%; 
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+            p{
+                    width:1000px;
+                }
+
+    </style>
+    <script>
+    
+    
+    var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1} 
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+    }
+    x[slideIndex-1].style.display = "block"; 
+}
+    
+    </script>
+<body>
+
+
+<h1>Baseball</h1>
+<img class="mySlides" src="https://shop.wilson.com/media/catalog/product/w/t/wta1074bsst-1.jpg">
+<img class="mySlides" src="https://usathss.files.wordpress.com/2017/06/baseball_graphic1.jpg?w=1000&h=600&crop=1">
+<img class="mySlides" src="https://nevadapreps.com/wp-content/uploads/2017/07/8944928_web1_thinkstockphotos-baseball-452651755.jpg">
+<img class="mySlides" src="http://cdn.abclocal.go.com/content/wtvd/images/cms/automation/images/925508_1280x720.jpg">
+<button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+
+<p>Official League leather baseballs have durable full-grain leather covers with raised seams that allow for a better grip and control when throwing the ball. Inside, a cork and rubber core center is surrounded by a yarn winding making this a great ball to use for youth games or high school practices.</p>
+
+</body>
+</html>
